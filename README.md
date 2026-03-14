@@ -22,10 +22,13 @@ The project includes the following core files and directory structure:
 - The file `train.py` contains the script for testing the BERTGIN-EC model.
 - The file `train_ablation.py` contains the script for conducting the ablation study of BERTGIN-EC.
 
+The datasets after 5-fold cross-validation processing and the pre-trained models can be accessed via the following link: https://pan.baidu.com/s/1AeTamOZOdDfgRH7D_V6vNA?pwd=3us4.
+
 ## System Requirements
 
 The proposed ```BERTGIN-EC``` has been implemented, trained, and tested by using `Python 3.8` and `PyTorch 2.1.0` with `CUDA 12.1` and an `NVIDIA RTX4090` graphics card.
 
+The package depends on the Python scientific stack:
 ```
 Python
 torch
