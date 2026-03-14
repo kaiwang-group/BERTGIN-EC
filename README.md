@@ -60,32 +60,12 @@ Multi-dimensional features are extracted separately from reaction SMILES and mol
 The model can be trained using the file `train.py`, and then tested using the file `test.py`.
 
 
-
-
-### Model Testing
-
-```bash
-python test.py
-```
-
 ### Ablation Study
+We define the single-modal models **BERT-EC** and **GIN-EC** (derived from the **BERTGIN-EC** method) in the file `ablation_model.py`.
 
-```bash
-python train_ablation.py
-```
-
-The ablation study supports evaluating the contributions of different modalities: graph-only modality, sequence-only modality, and the combination of sequence and graph modalities.
+Both modal models can be trained in one go using the file `train_ablation.py`.
 
 
-## Pre-trained Models
-
-This project uses ChemBERTa as the sequence feature extractor. Pre-trained weights can be downloaded from Hugging Face:
-
-```python
-from transformers import AutoModel, AutoTokenizer
-
-model = AutoModel.from_pretrained("seyonec/ChemBERTa-zinc-base-v1")
-tokenizer = AutoTokenizer.from_pretrained("seyonec/ChemBERTa-zinc-base-v1")
 ```
 
 
