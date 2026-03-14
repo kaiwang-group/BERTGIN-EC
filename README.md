@@ -6,6 +6,9 @@
 
 ```BERTGIN-EC``` consists of three modules: the reaction SMILES sequence feature extraction module,  reaction graph feature extraction module,  feature fusion and prediction module.The reaction SMILES sequence feature extraction module employs a pre-trained BERT model to extract the 1D sequence features of reaction SMILES.The reaction graph feature extraction module uses a Graph Isomorphism Network (GIN) to extract the 2D graph structural features of the reaction.The feature fusion and prediction module fuses the bimodal features to predict and output the EC number.
 
+The overall framework of ```BERTGIN-EC``` is shown in the following figure.
+
+
 ## Description
 
 This project proposes an innovative multi-modal fusion framework that combines the ChemBERTa chemical language model and graph neural networks to predict EC numbers of enzyme-catalyzed reactions. The method leverages SMILES sequence information of reactants and products along with molecular graph structure information, achieving efficient enzyme classification prediction through various fusion strategies.
