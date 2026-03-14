@@ -27,38 +27,28 @@ The datasets processed with 5-fold cross-validation and the trained models can b
 
 ## System Requirements
 
-The proposed ```BERTGIN-EC``` has been implemented, trained, and tested by using `Python 3.8` and `PyTorch 2.1.0` with `CUDA 12.1` and an `NVIDIA RTX4090` graphics card.
+The proposed ```BERTGIN-EC``` has been implemented, trained, and tested by using `Python 3.10` and `PyTorch 2.8.0` with `CUDA 12.1` and an `NVIDIA RTX4090` graphics card.
 
 The package depends on the Python scientific stack:
 ```
-Python
-torch
-Transformers
-PyTorch Geometric
-RDKit
-scikit-learn
-pandas
-numpy
-tqdm
-networkx
-scipy
-```
-
-Dependencies can be installed using the following command:
-
-```bash
-pip install torch transformers torch-geometric rdkit scikit-learn pandas numpy tqdm networkx scipy
+Python： 3.10.19
+torch： 2.8.0
+Transformers：  4.57.1 
+torch-geometric： 2.3.0.post1 
+RDKit： 2025.09.1 
+scikit-learn ： 1.7.2
+pandas:  2.3.3 
+numpy : 2.4.6 
+tqdm:  4.67.1
+networkx: 3.4.2
+scipy:  1.15.2  
 ```
 
 ## Usage
 
-### Data Preprocessing
+### Datasets
 
-```bash
-python preprocess.py
-```
-
-This script will perform the following operations: load the dataset; convert SMILES to molecular graph structures; encode SMILES using the ChemBERTa tokenizer; perform 5-fold cross-validation data splitting; save preprocessed data to the `preprocessed/` directory.
+The datasets are also available in other sources https://github.com/rxn4chemistry/biocatalysis-model/tree/main/data
 
 ### Model Training
 
