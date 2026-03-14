@@ -50,6 +50,13 @@ scipy:  1.15.2
 
 The dataset of enzyme-catalyzed reactions containing 62,000 biological reactions and their corresponding enzyme EC numbers extracted from four databases (Rhea, BRENDA, PathBank, MetaNetX) is available [here](https://github.com/rxn4chemistry/biocatalysis-model/tree/main/data).
 
+### Data Processing
+Raw data preprocessing can be performed using the `preprocess.py` script, including:
+- Extraction of EC numbers as label information;
+- Conversion of reaction SMILES sequences to molecular graphs;
+- Random five-fold cross-validation splitting of the dataset;
+- Further formatting of the data to be directly loadable by the model.
+
 ### Model Training
 We define the multimodal model for the **BERTGIN-EC** method in the file `multimodal_model.py`, where:
 - The sequence feature extraction module is implemented based on the pre-trained model ChemBERTa.
